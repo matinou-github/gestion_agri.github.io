@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- form-basic-inputs23:59-->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <title>Preclinic - Medical & Hospital - Bootstrap 4 Admin Template</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!--[if lt IE 9]>
+		<script src="assets/js/html5shiv.min.js"></script>
+		<script src="assets/js/respond.min.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+    <div class="main-wrapper">
+        <div class="header">
+			<div class="header-left">
+				<a href="index-2.html" class="logo">
+					<img src="assets/img/logo.png" width="35" height="35" alt=""> <span>Preclinic</span>
+				</a>
+			</div>
+			<a id="toggle_btn" href="javascript:void(0);"><i class="fa fa-bars"></i></a>
+            <a id="mobile_btn" class="mobile_btn float-left" href="#sidebar"><i class="fa fa-bars"></i></a>
+            <ul class="nav user-menu float-right">
+                <li class="nav-item dropdown d-none d-sm-block">
+                    <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown"><i class="fa fa-bell-o"></i> <span class="badge badge-pill bg-danger float-right">3</span></a>
+                    <div class="dropdown-menu notifications">
+                        <div class="topnav-dropdown-header">
+                            <span>Notifications</span>
+                        </div>
+                        <div class="drop-scroll">
+                            <ul class="notification-list">
+                                <li class="notification-message">
+                                    <a href="activities.html">
+                                        <div class="media">
+											<span class="avatar">
+												<img alt="John Doe" src="assets/img/user.jpg" class="img-fluid">
+											</span>
+											<div class="media-body">
+												<p class="noti-details"><span class="noti-title">John Doe</span> added new task <span class="noti-title">Patient appointment booking</span></p>
+												<p class="noti-time"><span class="notification-time">4 mins ago</span></p>
+											</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="notification-message">
+                                    <a href="activities.html">
+                                        <div class="media">
+											<span class="avatar">V</span>
+											<div class="media-body">
+												<p class="noti-details"><span class="noti-title">Tarah Shropshire</span> changed the task name <span class="noti-title">Appointment booking with payment gateway</span></p>
+												<p class="noti-time"><span class="notification-time">6 mins ago</span></p>
+											</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="notification-message">
+                                    <a href="activities.html">
+                                        <div class="media">
+											<span class="avatar">L</span>
+											<div class="media-body">
+												<p class="noti-details"><span class="noti-title">Misty Tison</span> added <span class="noti-title">Domenic Houston</span> and <span class="noti-title">Claire Mapes</span> to project <span class="noti-title">Doctor available module</span></p>
+												<p class="noti-time"><span class="notification-time">8 mins ago</span></p>
+											</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="notification-message">
+                                    <a href="activities.html">
+                                        <div class="media">
+											<span class="avatar">G</span>
+											<div class="media-body">
+												<p class="noti-details"><span class="noti-title">Rolland Webber</span> completed task <span class="noti-title">Patient and Doctor video conferencing</span></p>
+												<p class="noti-time"><span class="notification-time">12 mins ago</span></p>
+											</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="notification-message">
+                                    <a href="activities.html">
+                                        <div class="media">
+											<span class="avatar">V</span>
+											<div class="media-body">
+												<p class="noti-details"><span class="noti-title">Bernardo Galaviz</span> added new task <span class="noti-title">Private chat module</span></p>
+												<p class="noti-time"><span class="notification-time">2 days ago</span></p>
+											</div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="topnav-dropdown-footer">
+                            <a href="activities.html">View all Notifications</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item dropdown d-none d-sm-block">
+                    <a href="javascript:void(0);" id="open_msg_box" class="hasnotifications nav-link"><i class="fa fa-comment-o"></i> <span class="badge badge-pill bg-danger float-right">8</span></a>
+                </li>
+                <li class="nav-item dropdown has-arrow">
+                    <a href="#" class="dropdown-toggle nav-link user-link" data-toggle="dropdown">
+                        <span class="user-img"><img class="rounded-circle" src="assets/img/user.jpg" width="40" alt="Admin">
+							<span class="status online"></span></span>
+                        <span>Admin</span>
+                    </a>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="profile.html">My Profile</a>
+						<a class="dropdown-item" href="edit-profile.html">Edit Profile</a>
+						<a class="dropdown-item" href="settings.html">Settings</a>
+						<a class="dropdown-item" href="login.html">Logout</a>
+					</div>
+                </li>
+            </ul>
+            <div class="dropdown mobile-user-menu float-right">
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="profile.html">My Profile</a>
+                    <a class="dropdown-item" href="edit-profile.html">Edit Profile</a>
+                    <a class="dropdown-item" href="settings.html">Settings</a>
+                    <a class="dropdown-item" href="login.html">Logout</a>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar" id="sidebar">
+            <div class="sidebar-inner slimscroll">
+                <div id="sidebar-menu" class="sidebar-menu">
+                    <ul>
+                        <li class="menu-title">Main</li>
+                        <li class="active">
+                            <a href="admin_dashboard.html"><i class="fa fa-dashboard"></i> <span>Dashboard</span></a>
+                        </li>
+						<li>
+                            <a href="liste_clients.html"><i class="fa fa-user-o"></i> <span>Tous les clients</span></a>
+                        </li>
+                        <li>
+                            <a href="liste_demande.html"><i class="fa fa-calendar"></i> <span>Liste des demandes</span></a>
+                        </li>
+                        <li>
+                            <a href="remboursement_form.html"><i class="fa fa-calendar-check-o"></i> <span>New remboursement</span></a>
+                        </li>
+                        <li>
+                            <a href="hist_remboursement.html"><i class="fa fa-calendar-check-o"></i> <span>Histq remboursement</span></a>
+                        </li>
+                        <li>
+                            <a href="bilan_client.html"><i class="fa fa-calendar-check-o"></i> <span>Bilan Client</span></a>
+                        </li>
+                        <li>
+                            <a href="variable_indice_form.html"><i class="fa fa-calendar-check-o"></i> <span>Indice de calcule</span></a>
+                        </li>
+                        <li>
+                            <a href="new_demande.html" style="font-weight: bolder;" class="text-warning"><i class="fa fa-hospital-o"></i> <span>Nouvelle demande</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="page-wrapper">
+            <div class="content">
+                <div class="row mb-4">
+                    <div class="col-sm-12 text-center">
+                        <h2 class="text-dark">NOUVELLE DEMANDE</h2>
+                        <h5 class="text-danger">Merci de bien vouloir lire les conditions qui sous-tendent la demande de service dans notre structure en cliquant ici</h5>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+                            CONDITION
+                        </button>
+                        
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLongTitle">DETAIL DE L'ACCORD</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                </div>
+                                <div class="modal-body" style="text-align: justify;">
+                                    <!-- Description détaillée -->
+                                    <p>N° du Contrat de Prestation de Services (CPS)</p>
+                                    <p>Numéro du client : 1.2 K A</p>
+                                    <p>**CONTRAT DE PRESTATION DE SERVICES**</p>
+                                    <p>(Copie du Bureau)</p>
+                                    <p>Entre les soussignés :</p>
+                                    <p>La COOPERATIVE DE FINANCEMENT POUR LE DEVELOPPEMENT DE L’AGRICULTURE ET DE L’ELEVAGE (CDAE-FINANCE) ayant son siège social à Bon en face de l’Ecole Primaire Publique centrale, enregistrée sous le numéro 04/03/03/2017/0082/Im au Registre des SCOOP Simplifiées du Borgou, tél : 96 03 21 16</p>
+                                    <p>Et :</p>
+                                    <p>Le (la) client (e) :</p>
+                                    <p>Nom et prénoms : . _S_ _E_ _G_ _A_ H _... N_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_ _t_</p>
+                                    <p>© Les frais liés à l’acheminement des sacs de soja au magasin de la CDAE-FINANCE, ainsi que les sacs d’emballage correspondant au remboursement des dettes sont à la charge entière du client.</p>
+                                    <p>En réseau, le client : © C.G.A.H…Victeron… envoie à la CDAE-FINANCE, AGEO…… Rg de soja au plus tard le 13 décembre 2024.</p>
+                                    <p>Article 3 : Intérêts et Pénalités</p>
+                                    <p>Aussi intérêt particulier n’est demandé au client outre le remboursement en nature convenu dans ce présent comité. Par contre, les contrevenants courent la pénalité ou la sanction suivante :</p>
+                                    <p> tout remboursement du client intervenu après le délai du 15 décembre 2024 est passible d’une pénalité de 5 Kg/sec ;</p>
+                                    <p> le client n’ayant pas honoré son engagement jusqu’au 20 décembre 2024, verra son cas classé comme Inigeux et soumis ensuite à l’autorité locale de premier niveau dont le Commissariat de Police de Sharon. Ainsi, les frais de médiation de l’autorité locale augmentés des pénalités de la CDAE-FINANCE comme énumérées ci-dessus sont entièrement imputés et exigibles au client.</p>
+                                    <p>Article 3 : Cas de force majeure entrevant le remboursement de la dette</p>
+                                    <p>Lorsque le Débiteur (client) ne parvient pas à rembourser sa dette comme convenu suite à l’innodation entière du champ de soja suivie de l’improductivité des plants (seul cas considéré comme force majeure), il pourra la rembourser avec du maïs. Dans ce cas, un comité formé des représentants des agriculteurs et des responsables de la CDAE-FINANCE siège pour définir la quantité correspondant à l’apurement de la dette. En ce qui concerne le qualifié remboursement, la même pénalité est également applicable et exigible au client.</p>
+                                    <p>Article 4 : Cas de décès du client</p>
+                                    <p>Par ce présent contrat et en cas de décès, le Débiteur donne pouvoir et autorise les membres de sa famille sans que les amis à rembourser intégralement la CDAE-FINANCE dans le délai convenu (15 décembre 2024 au plus tard). Pour le retard de remboursement autorisé jusqu’à la date limite du 20 décembre 2024, le remboursement de la dette par le soja ou le maïs est fait sans aucune pénalité. C’est par ce geste symbolique, que les membres fondateurs de la CDAE-FINANCE compatissent à la douleur de la famille éplorée tout en notifiant qu’ils n’ont nullement la prétention de faire un mauvais souhait que ce soit, à leur très cher client.</p>
+                                    <p>Article 5 : Election de domicile et attribution de compétence</p>
+                                    <p>Tout litige n’ayant pas été résolu par l’autorité locale, est transféré pour être définitivement tranché par le Totanaï de Première Instance de Parakou. De toutes les manières, la CDAE-FINANCE privilégie le règlement à l’accueil des difficultés liées au présent contrat.</p>
+                                    <p>Bonne chance cher client, et bonne moisson pour la campagne agricole 2024-2025 !</p>
+                                    <p>Pour la CDAE-FINANCE,</p>
+                                    <p>LE GERANT</p>
+                                    <p>Mr Osséni TOKOROU</p>
+                
+                                    <!-- Détails de l'accord -->
+                                    <p>Montant du prêt: <span id="modalAmount">0</span> Tk</p>
+                                    <p>Catégorie: <span id="modalCategory">---------</span></p>
+                                    <p>Date de demande: <span id="modalRequestDate">29/11/2024</span></p>
+                                    <p>Durée: <span id="modalYear">1</span> ans</p>
+                                </div>
+                                <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="card-box">
+                            <h4 class="card-title">Information supplémentaire</h4>
+                            <form action="#"> 
+                                <div class="form-group row">
+                                    <label class="col-form-label col-md-2">Superficie a labouré en Ha</label>
+                                    <div class="col-md-10">
+                                        <input type="number" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-form-label col-md-2">Besoins en herbicide</label>
+                                    <div class="col-md-8">
+                                        <select class="form-control">
+                                            <option>-- Choisir Herbicide --</option>
+                                            <option>Herbicide Sélectif</option>
+                                            <option>Herbicide Non sélectif</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <input type="number" class="form-control" placeholder="Quantité">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-form-label col-md-2">Frais de garantie calculé</label>
+                                    <div class="col-md-10">
+                                        <input type="text" class="form-control" disabled="disabled">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-form-label col-md-2">Preuve de paiement</label>
+                                    <div class="col-md-10">
+                                        <input class="form-control" type="file">
+                                    </div>
+                                </div>
+                                <div style="text-align: end;">
+                                    <a href="admin_dashboard.html" type="button" class="text-end btn btn-primary btn-lg w-100">Valider</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sidebar-overlay" data-reff=""></div>
+    <script src="assets/js/jquery-3.2.1.min.js"></script>
+	<script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.slimscroll.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+
+
+<!-- form-basic-inputs23:59-->
+</html>
